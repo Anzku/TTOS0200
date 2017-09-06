@@ -17,12 +17,18 @@ namespace Hello
       //SayHello();
       //ShowNames();
       //staattisen ohjelman kutsuminen toisesta luokasta
-      //Hello.Lotto.DrawLotto();
+      Hello.Lotto.DrawLotto();
+            Space(6);
             Hello.BlackJack.Start();
             
             
     }
 
+        static void Space(int x)
+        {
+            for (int i = 0; i < x; i++)
+                Console.WriteLine();
+        }
     static void ShowNames()
     {
       //Ohjelma kysyy käyttäjältä viisi käyttäjänimeä ja tallentaa ne taulukkoon.
