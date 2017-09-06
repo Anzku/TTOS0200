@@ -12,6 +12,7 @@ namespace JAMK.IT
     {
       TestaaKiuas();
       JAMK.IT.TestCat.Testaa();
+            
     }
 
     //Lab3 Tehtävä 1: Kiuas-luokan testaus
