@@ -14,8 +14,8 @@ namespace Labra01
             //MakeSpace(5);
             //Labra01.T6.Tehtava();
             //Labra01.T9new.Tehtava();
-          
-            Labra01.T11.Tehtava();
+            
+            Labra01.T12.Tehtava();
             
             
         }

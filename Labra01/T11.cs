@@ -8,7 +8,7 @@ namespace Labra01
 {
     class T11
     {
-        static void Tehtava()
+        public static void Tehtava()
         {
             Console.WriteLine("Kahden sisäkkäisen for-silmukan ohjelma, joka tulostaa kuvion");
             Console.Write("Anna rivien määrä > ");
@@ -21,6 +21,7 @@ namespace Labra01
                 }
                 Console.WriteLine();
             }
+            Console.Read();
         }
     }
 }
