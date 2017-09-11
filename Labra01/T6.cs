@@ -11,6 +11,7 @@ namespace Labra01
         public static void Tehtava()
         {
             Console.WriteLine("Tehtävä 1");
+            Console.ReadLine();
         }
     }
 }

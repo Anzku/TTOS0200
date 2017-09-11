@@ -13,7 +13,7 @@ namespace Labra01
             //Labra01.T6.Tehtava();
             //MakeSpace(5);
             //Labra01.T6.Tehtava();
-            Labra01.T8.Tehtava();
+            Labra01.T9.Tehtava();
         }
         static void MakeSpace(int x)
         {
