@@ -28,6 +28,7 @@ namespace Labra01
                 i++;
                 number[i] = Convert.ToInt32(Console.ReadLine());
                 sum += number[i];
+
             } while (number[i] != 0);
 
 
