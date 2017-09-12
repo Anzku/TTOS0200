@@ -15,7 +15,7 @@ namespace Labra01
             //Labra01.T6.Tehtava();
             //Labra01.T9new.Tehtava();
             
-            Labra01.T7.Tehtava();
+            Labra01.T17.Tehtava();
             
             Console.Read();
         }
