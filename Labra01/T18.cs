@@ -18,37 +18,41 @@ namespace Labra01
             lause = Console.ReadLine();
 
             int i = 0;
-            char[] array = new char[lause.Length];
-            char[] reverse_array = new char[lause.Length];
+            int pituus = lause.Length;
+            char[] array = new char[pituus];
+            char[] reverse_array = new char[pituus];
             foreach (char c in lause)
             {
                 
                 array[i] = c;
-                reverse_array[i] = c;
+                
                 Console.WriteLine(array[i]);
+                i++;
             }
 
 
-            Console.WriteLine("Lause length " + lause.Length);
-
-            for (int k = 3; k >= 0; k--)
+            Console.WriteLine("Lause length " + pituus);
+            i = pituus-1;
+            for (int k = 0; k < pituus; k++)
             {
-                reverse_array[k]=array[(3-k)];
-                Console.Write(reverse_array[k]);
-
+                reverse_array[k]=array[i];
+                Console.WriteLine("reverse_array[" + k + "] = " + reverse_array[k]);
+                i--;
+               
             }
             Console.WriteLine();
 
 
-            for (int j=0; j<lause.Length; j++) { // vertaillaan
+            for (int j=0; j<pituus; j++) { // vertaillaan
                 if (array[j] == reverse_array[j]) 
                     {
                         polinome = true;
+                    Console.WriteLine("array[" + j + "] == reverse_array[" + j + "] = " + array[j]);
                     }
                 
             }
-            if (polinome) Console.WriteLine("Se on polinome");
-            else Console.WriteLine("Se ei ole polinome");
+            if (polinome) Console.WriteLine("Se on palidromi");
+            else Console.WriteLine("Se ei ole palidromi");
         }
     }
 }
