@@ -10,7 +10,7 @@ namespace Labra01
     {
         public static void Tehtava()
         {
-            Console.WriteLine("Tehtävä 18. Tee ohjelma, joka kysyy käyttäjältä merkkijonon(lause).Sovelluksen tulee ilmoittaa käyttäjälle oliko annettu merkkijono palidromi.");
+            Console.WriteLine("Tehtävä 18. Tee ohjelma, joka kysyy käyttäjältä merkkijonon(lause).Sovelluksen tulee ilmoittaa käyttäjälle oliko annettu merkkijono palindromi.");
             Console.WriteLine("\nAnna merkkijonon > ");
             String lause;
             
@@ -21,7 +21,7 @@ namespace Labra01
             int pituus = lause.Length;
             char[] array = new char[pituus];
             char[] reverse_array = new char[pituus];
-            bool palidrom = false;
+            bool palindrom = false;
             foreach (char c in lause)
             {
                 
@@ -47,18 +47,18 @@ namespace Labra01
             for (int j=0; j<pituus; j++) { // vertaillaan
                 if (array[j] == reverse_array[j])
                 {
-                    palidrom = true;
+                    palindrom = true;
                     Console.WriteLine("array[" + j + "] == reverse_array[" + j + "] = " + array[j]);
                 }
                 else
                 {
-                    palidrom = false;
+                    palindrom = false;
                     break;
                 }
                 
             }
-            if (palidrom) Console.WriteLine("Se on palidromi");
-            else Console.WriteLine("Se ei ole palidromi");
+            if (palindrom) Console.WriteLine("Se on palindromi");
+            else Console.WriteLine("Se ei ole palindromi");
         }
     }
 }
