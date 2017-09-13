@@ -33,7 +33,7 @@ namespace Labra01
 
 
             Console.WriteLine("Lukujen summa on " + sum);
-            Console.Read();
+            
         }
 
 

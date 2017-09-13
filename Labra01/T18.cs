@@ -13,7 +13,7 @@ namespace Labra01
             Console.WriteLine("Tehtävä 18. Tee ohjelma, joka kysyy käyttäjältä merkkijonon(lause).Sovelluksen tulee ilmoittaa käyttäjälle oliko annettu merkkijono palidromi.");
             Console.WriteLine("\nAnna merkkijonon > ");
             String lause;
-            bool polinome = false;
+            
             
             lause = Console.ReadLine();
 
@@ -21,17 +21,18 @@ namespace Labra01
             int pituus = lause.Length;
             char[] array = new char[pituus];
             char[] reverse_array = new char[pituus];
+            bool palidrom = false;
             foreach (char c in lause)
             {
                 
                 array[i] = c;
                 
-                Console.WriteLine(array[i]);
+                //Console.WriteLine(array[i]);
                 i++;
             }
 
 
-            Console.WriteLine("Lause length " + pituus);
+            //Console.WriteLine("Lause length " + pituus);
             i = pituus-1;
             for (int k = 0; k < pituus; k++)
             {
@@ -44,14 +45,19 @@ namespace Labra01
 
 
             for (int j=0; j<pituus; j++) { // vertaillaan
-                if (array[j] == reverse_array[j]) 
-                    {
-                        polinome = true;
+                if (array[j] == reverse_array[j])
+                {
+                    palidrom = true;
                     Console.WriteLine("array[" + j + "] == reverse_array[" + j + "] = " + array[j]);
-                    }
+                }
+                else
+                {
+                    palidrom = false;
+                    break;
+                }
                 
             }
-            if (polinome) Console.WriteLine("Se on palidromi");
+            if (palidrom) Console.WriteLine("Se on palidromi");
             else Console.WriteLine("Se ei ole palidromi");
         }
     }
