@@ -22,27 +22,27 @@ namespace Labra02
                         case 1:
                             Labra02.T1.Tehtava();
                             break;
-                       /* case 2:
+                        case 2:
                             Labra02.T2.Tehtava();
                             break;
                         case 3:
                             Labra02.T3.Tehtava();
-                            break;
+                            break;/*
                         case 4:
                             Labra02.T4.Tehtava();
                             break;
                         case 5:
-                            Labra01.T5.Tehtava();
+                            Labra02.T5.Tehtava();
                             break;
                         case 6:
-                            Labra01.T6.Tehtava();
+                            Labra02.T6.Tehtava();
                             break;
                         case 7:
-                            Labra01.T7.Tehtava();
+                            Labra02.T7.Tehtava();
                             break;
                        */
                         default:
-                            Labra02.T1.Tehtava();
+                            Labra02.T2.Tehtava();
                             break;
 
                     }
