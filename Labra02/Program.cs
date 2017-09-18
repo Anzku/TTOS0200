@@ -30,10 +30,10 @@ namespace Labra02
                             break;
                         case 4:
                             Labra02.T4.Tehtava();
-                            break;/*
+                            break;
                         case 5:
                             Labra02.T5.Tehtava();
-                            break;
+                            break;/*
                         case 6:
                             Labra02.T6.Tehtava();
                             break;
