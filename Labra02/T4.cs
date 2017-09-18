@@ -51,7 +51,7 @@ namespace Labra02
                         Console.Write("Anna uusi arvo > ");
                         int tyres = Convert.ToInt32(Console.ReadLine());
                         vehicle.tyres = tyres;
-                        vehicle.PrintData();
+                        Console.WriteLine(vehicle);
                         
                         
 
@@ -86,9 +86,9 @@ namespace Labra02
             Console.WriteLine("Vehicle speed: {0} km/h",this.speed);
             Console.WriteLine("Tyres: {0}", this.tyres);
         }
-        public string ToString(Vehicle car)
+        public override string ToString()
         {
-            return "Vehicle name: " + car.name + ". Vehicle speed: " + car.speed + ". Tyres: " + car.tyres;           
+            return "Vehicle name: " + this.name + ". Vehicle speed: " + this.speed + " km/h. Tyres: " + this.tyres;           
         }
         public void Speed()
         {
