@@ -51,6 +51,7 @@
     <Compile Include="T4.cs" />
     <Compile Include="T5.cs" />
     <Compile Include="T6.cs" />
+    <Compile Include="T7.cs" />
     <Compile Include="test.cs" />
   </ItemGroup>
   <ItemGroup>

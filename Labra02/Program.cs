@@ -36,13 +36,13 @@ namespace Labra02
                             break;
                         case 6:
                             Labra02.T6.Tehtava();
-                            break;/*
+                            break;
                         case 7:
                             Labra02.T7.Tehtava();
                             break;
-                       */
+                       
                         default:
-                            Labra02.T2.Tehtava();
+                            Labra02.T7.Tehtava();
                             break;
 
                     }
