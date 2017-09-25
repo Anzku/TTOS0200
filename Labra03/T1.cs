@@ -65,11 +65,15 @@ namespace Labra03
         public static bool OnkoPvm(string syote)
             /*"pp.kk.vv" tai "pp.kk.vvvv"*/
         {
+            int pisteet=0;
             
             foreach (char c in syote)
             {
                 if (c == ',') return false;
+                if (c == '.') pisteet++;
+                
             }
+            if (pisteet != 2) return false;
             DateTime dateValue;
             if (DateTime.TryParse(syote, out dateValue))
                 return true;

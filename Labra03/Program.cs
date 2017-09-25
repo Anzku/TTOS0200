@@ -10,8 +10,14 @@ namespace Labra03
     {
         static void Main(string[] args)
         {
-            T1.Tehtava();
-            Console.ReadLine();
+            int x;
+            do
+            {
+                T2.Tehtava();
+                Console.Write("Press 1, if you want to continue > ");
+                x = Convert.ToInt32(Console.ReadLine());
+            } while (x > 0);
+            
         }
     }
 }
