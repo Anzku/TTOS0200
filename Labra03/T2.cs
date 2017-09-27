@@ -10,7 +10,7 @@ namespace Labra03
     {
         public static void Tehtava()
         {
-            Hissi dynamo = new Hissi();
+            Hissi dynamo = new Hissi(); // МАКСИМАЛЬНЫЙ И МИНИМАЛЬНЫЙ ЭТАЖИ ЛУЧШЕ ЗАДАВАТЬ ПРЯМО В ОБЪЕКТ
             int uusiKerros;
             for (int i=0;i<10;i++)
             {
@@ -36,7 +36,7 @@ namespace Labra03
     class Hissi
     {
         private int kerros { get; set; }
-        public Hissi () {
+        public Hissi () { // ТОГДА ЗДЕСЬ УСТАНАВЛИВАТЬ МАКС И МИН ЭТАЖИ
             this.kerros = 1;
         }
         public int Floor

@@ -79,6 +79,22 @@ namespace Labra03
                 return true;
             else return false;
         }
+
+        /*public static bool OnkoPvm(string syote)
+        {
+            DateTime datevalue;
+            bool tulos = false;
+            CultureInfo culture = new CultureInfo("fi-FI"); // ПРОВЕРЯЕТ КУЛЬТУРУ/СТРАНУ
+            if (syote.Contains(","))
+                tulos = false;
+            else if (syote.Contains("-"))
+                tulos = false;
+            else if (syote.Contains("/"))
+                tulos = false;
+            else if (DateTime.TryParse(syote, culture, DateTimeStyles.None, out datevalue))
+                tulos = true;
+            return tulos;
+        }*/
     }
     
 }
