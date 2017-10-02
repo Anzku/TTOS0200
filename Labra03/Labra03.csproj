@@ -51,6 +51,7 @@
     <Compile Include="T5.cs" />
     <Compile Include="T6.cs" />
     <Compile Include="T7.cs" />
+    <Compile Include="T8.cs" />
     <Compile Include="test.cs" />
     <Compile Include="Vahvistin.cs" />
   </ItemGroup>
