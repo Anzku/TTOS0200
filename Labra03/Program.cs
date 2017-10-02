@@ -13,7 +13,7 @@ namespace Labra03
             int x;
             do
             {
-                T6.Tehtava();
+                T7.Tehtava();
                 Console.Write("Press 1, if you want to continue > ");
                 x = Convert.ToInt32(Console.ReadLine());
             } while (x > 0);
