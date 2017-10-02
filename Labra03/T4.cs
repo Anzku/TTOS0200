@@ -17,6 +17,9 @@ namespace Labra03
             Console.WriteLine(person1);
             Boss person2 = new Boss("Jussi Jurkka", "Head of Institute",9000,"Audi",5000);
             Console.WriteLine(person2);
+            person1.Profession = "Principal Teacher";
+            person1.Salary = 2200;
+            Console.WriteLine(person1);
         }
     }
     class Employee
@@ -52,8 +55,10 @@ namespace Labra03
         }
         public override string ToString()
         {
-            return "- Name: "+name+"; Profession: "+profession+"; Salary: "+salary;
+           
+            return "\n"+this.GetType().Name+":\n- Name: "+name+", Profession: "+profession+", Salary: "+salary;
         }
+         
     }
     class Boss : Employee
     {
@@ -69,7 +74,7 @@ namespace Labra03
         }
         public override string ToString()
         {
-            return base.ToString() + "; Car: "+car+" Bonus: "+bonus;
+            return base.ToString() + ", Car: "+car+", Bonus: "+bonus;
         }
 
 
