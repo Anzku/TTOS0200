@@ -10,34 +10,28 @@ namespace Labra03
     {
         public static void Tehtava()
         {
-            Book staff1 = new Book("Phylosophy", 352);
-            staff1.SetStoragePlace("Book shelf");
-            Newspaper staff2 = new Newspaper("Keskisuomalainen", 2011);
-            staff2.Recycling();
-            BluRay staff3 = new BluRay("Game of thrones");
+            Paper lot1 = new Paper("lot1", 52);
+            lot1.SetStoragePlace("Paper container");
+            Paper lot2 = new Paper("lot2", 13);
+            lot2.Recycling();
+            Plastic lot3 = new Plastic("lot3", 24);
+            lot3.SetStoragePlace("Warehouse2");
+            SoftPlastic lot4 = new SoftPlastic("lot4", 31);
+            lot4.Recycling();
+            Aluminum lot5 = new Aluminum("lot5", 68);
+            Copper lot6 = new Copper("lot6", 95);
 
-            staff3.SetStoragePlace("Disk shelf");
-            Console.WriteLine(staff3);
-            CD staff4 = new CD("Empty CD");
-            staff4.Recycling();
-            Phone staff5 = new Phone("iPhone7");
-            Console.WriteLine(staff5);
-            staff5.Recycling();
-            Tablet staff6 = new Tablet("Lenovo");
-            staff6.Broken();
-            Console.WriteLine(staff6);
-            staff6.Recycling();
-            Notebook staff7 = new Notebook("ASUS");
-            Console.WriteLine(staff7);
-            staff7.SetStoragePlace("Bookshelf");
+            
 
 
         }
     }
-    abstract class StudentsStaff
+    abstract class Material
     {
         public abstract void Recycling();
         private string storagePlace = "not marked";
+        protected double kg;
+        protected string lot;
         public void SetStoragePlace(string place)
         {
             this.storagePlace = place;
@@ -47,155 +41,136 @@ namespace Labra03
         {
             return this.storagePlace;
         }
-    }
-    class Printing : StudentsStaff
-    {
-        private string name { get; set; }
-        public string Name
+        public Material (string lot, int kg)
         {
-            get { return name; }
-            set { name = value; }
+            this.lot = lot;
+            this.kg = kg;
+        }
+    }
+    class Plastic : Material
+    {
+        private string lot { get; set; }
+        public string Lot
+        {
+            get { return lot; }
+            set { lot = value; }
 
         }
-        public Printing(string name)
+        public Plastic(string lot, int kg)
+            :base(lot,kg)
         {
-            this.name = name;
+            Console.WriteLine(this);
         }
         public override void Recycling()
         {
-            Console.WriteLine(GetType().Name + " - " + this.name + " was moved to paper recycling");
+            Console.WriteLine(GetType().Name + " - " + this.lot + ", kg: " + this.kg + " was moved to general plastic recycling");
         }
         public override string ToString()
         {
-            return GetType().Name + " - name: " + this.name + ", storage place: " + this.GetStoragePlace();
+            return GetType().Name + " - lot: " + this.lot + ", kg: " + this.kg + ", storage place: " + this.GetStoragePlace();
         }
     }
-    class Book : Printing
+    class SoftPlastic : Plastic
     {
-        private int pages;
-        public Book(string name, int pages)
-            : base(name)
+        
+        public SoftPlastic(string lot, int kg)
+            : base(lot,kg)
         {
-            this.pages = pages;
+            
             Console.WriteLine(this);
         }
         public override string ToString()
         {
-            return GetType().Name + " - name: " + this.Name + ", pages: " + this.pages + ", storage place: " + this.GetStoragePlace();
+            return GetType().Name + " - lot: " + this.lot + ", kg: " + this.kg + ", storage place: " + this.GetStoragePlace();
         }
     }
-    class Newspaper : Printing
+    class HardPlastic : Plastic
     {
-        private int year;
-        public Newspaper(string name, int year)
-            : base(name)
+        public HardPlastic(string lot, int kg)
+            : base(lot,kg)
         {
-            this.year = year;
-            Console.WriteLine(GetType().Name + " - name: " + this.Name + ", year: " + this.year);
+            
+            Console.WriteLine(GetType().Name + " - lot: " + this.lot + ", kg: " + this.kg);
         }
         public override string ToString()
         {
-            return GetType().Name + " - name: " + this.Name + ", year: " + this.year;
+            return GetType().Name + " - lot: " + this.lot + ", kg: " + this.kg +", storage place: " + this.GetStoragePlace();
         }
 
     }
-    class Disk : StudentsStaff
+    class Metal : Material
     {
-        private string name;
-        public Disk(string name)
+        
+        public Metal(string lot, int kg)
+            :base(lot,kg)
         {
-            this.name = name;
+            Console.WriteLine(this);
         }
         public override void Recycling()
         {
-            Console.WriteLine(GetType().Name + " - " + this.name + " was moved to general recycling container");
+            Console.WriteLine(GetType().Name + " - " + this.lot + " was moved to general metal recycling container");
         }
         public override string ToString()
         {
-            return GetType().Name + " - name: " + this.name + ", storage place: " + this.GetStoragePlace();
+            return GetType().Name + " - lot: " + this.lot + ", kg: " + this.kg+ ", storage place: " + this.GetStoragePlace();
         }
     }
 
-    class BluRay : Disk
+    class Aluminum : Metal
     {
 
-        public BluRay(string name)
-            : base(name)
+        public Aluminum(string lot, int kg)
+            : base(lot, kg)
         {
 
             Console.WriteLine(this);
-            this.SetStoragePlace("BluRay disk shelf");
+            this.SetStoragePlace("Remelting of metal section.");
         }
         public override string ToString()
         {
             return base.ToString();
         }
     }
-    class CD : Disk
+    class Iron : Metal
     {
-        public CD(string name)
-            : base(name)
+        public Iron(string lot, int kg)
+            : base(lot,kg)
         {
             Console.WriteLine(this);
         }
 
     }
-    class DVD : Disk
+    class Copper : Metal
     {
-        public DVD(string name)
-            : base(name)
+        public Copper(string lot, int kg)
+            : base(lot,kg)
         {
-            this.SetStoragePlace("TV-taso");
+            
             Console.WriteLine(this);
-        }
-    }
-    class ElectronicDevice : StudentsStaff
-    {
-        protected string model;
-        private bool working = true;
-        public ElectronicDevice(string model)
-        {
-            this.model = model;
         }
         public override void Recycling()
         {
-            if (this.working) Console.WriteLine(GetType().Name + " - " + this.model + " is working good, so it shold be sold on Tori.fi");
-            else Console.WriteLine(GetType().Name + " - " + this.model + " is moved to electronic device recycling, because it's not working.");
+            Console.WriteLine(GetType().Name + " - " + this.lot + " was sold and moved to Copper Oy warehous");
         }
-        public void Broken()
+    }
+    class Paper : Material
+    {
+        
+        public Paper(string lot, int kg)
+            :base(lot,kg)
         {
-            this.working = false;
+            Console.WriteLine(this);
         }
+        public override void Recycling()
+        {
+            Console.WriteLine(GetType().Name + " - " + this.lot + " is moved to eneral paper recycling");
+        }
+        
         public override string ToString()
         {
-            return GetType().Name + " - model: " + this.model + ", storage place: " + this.GetStoragePlace() + ", working: " + this.working;
+            return GetType().Name + " - lot: " + this.lot + ", kg: " + this.kg + ", storage place: " + this.GetStoragePlace();
         }
     }
-    class Phone : ElectronicDevice
-    {
-        public Phone(string model)
-            : base(model)
-        {
-
-        }
-
-    }
-    class Tablet : ElectronicDevice
-    {
-        public Tablet(string model)
-            : base(model)
-        {
-
-        }
-
-    }
-    class Notebook : ElectronicDevice
-    {
-        public Notebook(string model)
-            : base(model)
-        {
-
-        }
-
-    }
+   
+    
 }
