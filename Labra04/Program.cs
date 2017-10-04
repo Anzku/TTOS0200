@@ -10,6 +10,9 @@ namespace Labra04
     {
         static void Main(string[] args)
         {
+            Labra04.Student.Test();
+            Console.Write("Press > ");
+            Console.ReadLine();
         }
     }
 }
