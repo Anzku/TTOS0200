@@ -59,17 +59,19 @@ namespace Labra04
             
             Console.WriteLine("Tyre " + merkki + " added to vehicle " + malli);
             
-            Console.WriteLine();
+            
         }
         public override string ToString()
         {
             string print = "";
             print += "Vechicle Name: " + nimi + " Model:" + malli;
             print += "\nTyres:\n";
-            for (int i = 0; i < pyorienlukumaara; i++)
+            foreach (Rengas tyre in tyres)
             {
-                print+="-Name: " + " Model:" +" TyreSize:"+"\n";
+                print += "-Merkki: " + tyre.merkki + " Tyypi:" + tyre.tyyppi + " TyreSize:" + tyre.rengaskoko +"\n";
             }
+
+               
             print += "\n";
             return print;
         }

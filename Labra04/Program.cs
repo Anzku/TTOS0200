@@ -10,7 +10,8 @@ namespace Labra04
     {
         static void Main(string[] args)
         {
-            Labra04.T1.Test();
+            
+            Labra04.T5.Tehtava();
             Console.Write("Press > ");
             Console.ReadLine();
         }
