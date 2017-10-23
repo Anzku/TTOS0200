@@ -46,6 +46,10 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="T2.cs" />
+    <Compile Include="T3.cs" />
+    <Compile Include="T4.cs" />
+    <Compile Include="T5Dictionary.cs" />
+    <Compile Include="T5.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

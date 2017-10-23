@@ -10,7 +10,7 @@ namespace Labra05
     {
         static void Main(string[] args)
         {
-            Labra05.T2.Test();
+            Labra05.T5Dictionary.Test();
         }
     }
 }

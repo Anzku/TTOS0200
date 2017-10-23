@@ -85,8 +85,10 @@ namespace Labra05
         {
             int min = TimeSec / 60;
             int sec = TimeSec % 60;
+            string nolla = "";
+            if (sec < 10) nolla = "0";
             
-            return string.Format(" - {0}, {1}:{2}\n", Name, min, sec);
+            return string.Format(" - {0}, {1}:{2}{3}\n", Name, min, nolla, sec);
         }
     }
 }
