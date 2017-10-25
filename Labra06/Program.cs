@@ -4,13 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Labra05
+namespace Labra06
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Labra05.T5.Test();
+            Labra06.T1.Test();
+            
+            
         }
     }
 }

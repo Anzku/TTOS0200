@@ -41,7 +41,7 @@ namespace Labra05
             stopWatch.Stop();
             TimeSpan ts = stopWatch.Elapsed;
             string elapsedTime = String.Format("{0}", ts.Milliseconds);
-            Console.WriteLine("\n- Persons tried to fiend : " + count);
+            Console.WriteLine("\n- Persons tried to find : " + count);
             Console.WriteLine("- Found : " + found);
             Console.WriteLine("- Total finding time : "+elapsedTime+" ms");
 
