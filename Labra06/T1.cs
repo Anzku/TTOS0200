@@ -12,8 +12,7 @@ namespace Labra06
         public static void Test()
         {
             // 
-            try
-            {
+            
                 string nimi;
                 //string filupath = @"D:\K8993";
                 string filupath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
@@ -36,16 +35,7 @@ namespace Labra06
                     Console.WriteLine("\nTeksti tiedosta: " + filu);
                     Console.WriteLine(teksti); 
                 }
-            }
-            catch (FileNotFoundException ex)
-            {
-                Console.WriteLine("Tiedostoa ei löydy!");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-                
-            }
+            
         }
     }
 }
