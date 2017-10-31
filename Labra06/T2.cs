@@ -11,13 +11,7 @@ namespace Labra06
     {
         public static void Test()
         {
-            string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            string filename = path + @"\test.txt";
-            StreamReader sr = new StreamReader(filename);
-            if (File.Exists(filename))
-            {
-                string nimi = File.ReadLines(;
-            }
+            
         }
     }
 }
