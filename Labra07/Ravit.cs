@@ -35,7 +35,8 @@ namespace Labra07
                     //tietueita on kahdenlaisia: 
                     //V1: etunimi + sukunimi
                     //V2: etunimi + väliosa + sukunimi
-                    if (int.TryParse(sanat[2], out int apu)) {
+                    int apu;
+                    if (int.TryParse(sanat[2], out apu)) {
                         kuski.Nimi = sanat[0] + " " + sanat[1];
                         kuski.Startit = int.Parse(sanat[2]);
                         kuski.Voitot = int.Parse(sanat[3]);
