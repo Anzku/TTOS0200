@@ -10,7 +10,7 @@ namespace Labra07
     {
         static void Main(string[] args)
         {
-            Labra07.T5.Test();
+            Labra07.T6.Test();
         }
     }
 }

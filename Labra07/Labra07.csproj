@@ -50,6 +50,7 @@
     <Compile Include="T3.cs" />
     <Compile Include="T4.cs" />
     <Compile Include="T5.cs" />
+    <Compile Include="T6.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
