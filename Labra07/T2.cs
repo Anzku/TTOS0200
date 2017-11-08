@@ -11,10 +11,10 @@ namespace Labra07
         public static void Test()
         {
             List<Product> ostoskori = new List<Product>();
-            ostoskori.Add(new Product("Milk",14));
-            ostoskori.Add(new Product("Beer", 22));
-            ostoskori.Add(new Product("Butter", 32));
-            ostoskori.Add(new Product("Cheese", 42));
+            ostoskori.Add(new Product("Milk",1.4F));
+            ostoskori.Add(new Product("Beer", 2.2F));
+            ostoskori.Add(new Product("Butter", 3.2F));
+            ostoskori.Add(new Product("Cheese", 4.2F));
             Console.WriteLine("All products in collection:");
             foreach (Product tavara in ostoskori)
             {

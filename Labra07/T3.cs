@@ -11,6 +11,8 @@ namespace Labra07
         public static void Test()
         {
             Fisherman henkilo1 = new Fisherman("Kirsi Kernel", "020-12345678");
+            Console.WriteLine("A new fisherman added to register:");
+            Console.WriteLine(" - Fisherman: " + henkilo1.Nimi + " Phone: " + henkilo1.Phone);
             henkilo1.GotFish(new Fish("pike", 35, 2.9F, new Location("The Lake of Jyväskylä", "Jyväskylä")));
             henkilo1.GotFish(new Fish("salmon", 50, 5.0F, new Location("River Teno", "The Northern edge of Finland")));
             henkilo1.GotFish(new Fish("pike", 40, 3.5F,new Location("The Lake of Jyväskylä", "Jyväskylä")));
@@ -28,14 +30,13 @@ namespace Labra07
     class Fisherman
     {
         public string Nimi { get; set; }
-        string Phone { get; set; }
+        public string Phone { get; set; }
         List<Fish> Fishes = new List<Fish>();
         public Fisherman (string nimi, string phone)
         {
             Nimi = nimi;
             Phone = phone;
-            Console.WriteLine("A new fisherman added to register:");
-            Console.WriteLine(" - Fisherman: " + Nimi + " Phone: " + Phone);
+            
         }
         public void GotFish(Fish fish)
         {
