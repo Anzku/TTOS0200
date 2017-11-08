@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labra06", "Labra06\Labra06.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labra07", "Labra07\Labra07.csproj", "{B27DFB48-0E5E-46BB-9472-AD71EE0DBA90}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDemo", "WPFDemo\WPFDemo.csproj", "{14F7DB44-2501-48E7-B5E5-5AAB49FAD1EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labra08", "Labra08\Labra08.csproj", "{9861E7C5-2508-4D01-BF1D-BCE3F81642FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{B27DFB48-0E5E-46BB-9472-AD71EE0DBA90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B27DFB48-0E5E-46BB-9472-AD71EE0DBA90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B27DFB48-0E5E-46BB-9472-AD71EE0DBA90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14F7DB44-2501-48E7-B5E5-5AAB49FAD1EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14F7DB44-2501-48E7-B5E5-5AAB49FAD1EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14F7DB44-2501-48E7-B5E5-5AAB49FAD1EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14F7DB44-2501-48E7-B5E5-5AAB49FAD1EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9861E7C5-2508-4D01-BF1D-BCE3F81642FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9861E7C5-2508-4D01-BF1D-BCE3F81642FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9861E7C5-2508-4D01-BF1D-BCE3F81642FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9861E7C5-2508-4D01-BF1D-BCE3F81642FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

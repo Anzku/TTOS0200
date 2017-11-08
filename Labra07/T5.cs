@@ -12,25 +12,18 @@ namespace Labra07
         {
             double[] array = { 1.0, 2.0, 3.3, 5.5, 6.3, -4.5, 12.0 };
             ArrayCalcs calcs = new ArrayCalcs(array);
-            
-            
-
         }
     }
     class ArrayCalcs
     {
-        
         public ArrayCalcs(double[] array)
         {
-            
             Sum(array);
             Ave(array);
             Min(array);
             Max(array);
-            
         }
         
-       
         public static void Sum(double[] array)
         {
             double sum = 0;
@@ -38,9 +31,7 @@ namespace Labra07
             {
                 sum += num;
             }
-
             Console.WriteLine( "Sum=" + sum);
-            
         }
         public static void Ave(double[] array)
         {
@@ -65,7 +56,6 @@ namespace Labra07
         public static void Max(double[] array)
         {
             double max = array[0];
-
             foreach (double num in array)
             {
                 if (num > max) max = num;

@@ -24,7 +24,7 @@ namespace Labra07
     }
     abstract class Shape
     {
-        string Name;
+        string Name { get; set; }
         public Shape(string name)
         {
             Name = name;
