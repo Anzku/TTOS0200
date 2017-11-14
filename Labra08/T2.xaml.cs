@@ -17,15 +17,42 @@ namespace Labra08
     /// <summary>
     /// Interaction logic for Window1.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class T2 : Window
     {
-        public Window1()
+        public T2()
         {
             InitializeComponent();
         }
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            
+            try
+
+    {
+                float ostan = float.Parse(txb_ostan.Text);
+                float maksan = ostan * 0.8997F;
+                txb_maksan.Text = maksan.ToString("0.00");
+                float usd = ostan / 0.8997F;
+                //tblock.Text = txb_ostan.Text + " EUR vastaa " + usd.ToString("0.00") + "USD";
+                tblock.Text = txb_ostan.Text;
+                tblock.Text += " EUR vastaa ";
+                tblock.Text += usd.ToString("0.00");
+                tblock.Text += " USD";
+            }
+
+    catch (Exception)
+            {
+                txb_maksan.Text = " ";
+                //tblock.Text = "Please, enter numbers";
+                //throw;
+            }
+            
 
         }
     }
