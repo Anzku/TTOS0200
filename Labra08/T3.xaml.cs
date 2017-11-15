@@ -42,6 +42,10 @@ namespace Labra08
                 textBox_2.Text = vastaus + " cm^2";
                 vastaus = karmin_piiri.ToString();
                 textBox_3.Text = vastaus + " cm";
+                Grid_ikkuna.Width = L;
+                Grid_ikkuna.Height = H;
+                Grid_lasi.Width = L - W * 2;
+                Grid_lasi.Height = H - W * 2;
             }
             catch (Exception)
             {

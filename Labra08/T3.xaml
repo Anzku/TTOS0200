@@ -20,6 +20,11 @@
         <TextBox x:Name="textBox_1" HorizontalAlignment="Left" Height="23" Margin="149,164,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="textBox_2" HorizontalAlignment="Left" Height="23" Margin="149,203,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="textBox_3" HorizontalAlignment="Left" Height="23" Margin="149,238,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Grid x:Name="Grid_ikkuna" HorizontalAlignment="Right" Margin="0,30,29,0" Width="333" Background="#FF592C0D" Height="172" VerticalAlignment="Top">
+            <Grid x:Name="Grid_lasi" HorizontalAlignment="Left" Height="133" Margin="19,20,0,0" VerticalAlignment="Top" Width="292" Background="#FFE3F4F9"/>
+        </Grid>
+        <Rectangle Fill="#FF532C06" HorizontalAlignment="Left" Height="70" Margin="438,235,0,0" Stroke="Black" VerticalAlignment="Top" Width="123"/>
+        <Rectangle Fill="#FFFFF9F3" HorizontalAlignment="Left" Height="46" Margin="450,248,0,0" Stroke="Black" VerticalAlignment="Top" Width="98"/>
 
     </Grid>
 </Window>
