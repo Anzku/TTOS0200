@@ -54,6 +54,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="T1.xaml.cs">
+      <DependentUpon>T1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="T2.xaml.cs">
+      <DependentUpon>T2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="T2class.cs" />
+    <Compile Include="T3class.cs" />
+    <Compile Include="T3Lotto.xaml.cs">
+      <DependentUpon>T3Lotto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="T4Kiuas.cs" />
+    <Compile Include="T4Kiuas.xaml.cs">
+      <DependentUpon>T4Kiuas.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -67,6 +82,22 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="T1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="T2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="T3Lotto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="T4Kiuas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
