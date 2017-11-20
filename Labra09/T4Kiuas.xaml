@@ -12,8 +12,8 @@
             <Label x:Name="label_Copy" Content="ultimate" HorizontalAlignment="Left" Margin="116,85,0,0" VerticalAlignment="Top" Height="38" Width="102" FontSize="20" FontFamily="Segoe Print"/>
             <Label x:Name="label_Copy1" Content="Temperature:" HorizontalAlignment="Left" Margin="29,128,0,0" VerticalAlignment="Top" Height="38" Width="151" FontSize="20" FontFamily="Segoe Print" Background="{x:Null}"/>
             <Label x:Name="label_Copy2" Content="Humidity:" HorizontalAlignment="Left" Margin="29,166,0,0" VerticalAlignment="Top" Height="45" Width="151" FontSize="20" FontFamily="Segoe Print"/>
-            <TextBlock x:Name="textTemp" HorizontalAlignment="Left" Height="26" Margin="185,136,0,0" TextWrapping="Wrap" Text="120" VerticalAlignment="Top" Width="53" FontSize="20"/>
-            <TextBlock x:Name="textHum" HorizontalAlignment="Left" Height="26" Margin="185,174,0,0" TextWrapping="Wrap" Text="100" VerticalAlignment="Top" Width="53" FontSize="20"/>
+            <TextBlock x:Name="textTemp" HorizontalAlignment="Left" Height="26" Margin="185,136,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="53" FontSize="20"/>
+            <TextBlock x:Name="textHum" HorizontalAlignment="Left" Height="26" Margin="185,174,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="53" FontSize="20"/>
         </Grid>
         <Grid HorizontalAlignment="Left" Height="264" Margin="271,32,0,0" VerticalAlignment="Top" Width="227" Background="#FFF8F9F8">
             <TextBox x:Name="inputBox" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="207" TextAlignment="Right"/>
@@ -28,10 +28,11 @@
             <Button x:Name="button2" Content="2" HorizontalAlignment="Left" Height="32" Margin="63,121,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="1.534,0.686" Click="button_Click"/>
             <Button x:Name="button3" Content="3" HorizontalAlignment="Left" Height="32" Margin="116,121,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="1.534,0.686" Click="button_Click"/>
             <Button x:Name="button0" Content="0" HorizontalAlignment="Left" Height="32" Margin="10,158,0,0" VerticalAlignment="Top" Width="101" RenderTransformOrigin="1.534,0.686" Click="button_Click"/>
-            <Button x:Name="buttonPilkku" Content="." HorizontalAlignment="Left" Height="32" Margin="116,158,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="1.534,0.686" Click="button_Click"/>
+            <Button x:Name="buttonPilkku" Content="," HorizontalAlignment="Left" Height="32" Margin="116,158,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="1.534,0.686" Click="button_Click"/>
             <Button x:Name="buttonOk" Content="ok" HorizontalAlignment="Left" Height="106" Margin="169,84,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="1.534,0.686" Click="buttonOk_Click"/>
             <RadioButton x:Name="radioTemp" Content="Temperature" HorizontalAlignment="Left" Margin="10,218,0,0" VerticalAlignment="Top" GroupName="group"/>
             <RadioButton x:Name="radioHum" Content="Humidity" HorizontalAlignment="Left" Margin="116,218,0,0" VerticalAlignment="Top" GroupName="group"/>
+            <TextBlock x:Name="infoBlock" HorizontalAlignment="Left" Margin="10,238,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="207"/>
         </Grid>
 
     </Grid>
