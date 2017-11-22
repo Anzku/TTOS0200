@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labra08", "Labra08\Labra08.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labra09", "Labra09\Labra09.csproj", "{ED9AC661-B200-4A41-B765-4F71A8CA5D66}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kertaus", "Kertaus\Kertaus.csproj", "{72CDC612-B8E3-4D05-A8DF-AC01CDD218C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{ED9AC661-B200-4A41-B765-4F71A8CA5D66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED9AC661-B200-4A41-B765-4F71A8CA5D66}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED9AC661-B200-4A41-B765-4F71A8CA5D66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72CDC612-B8E3-4D05-A8DF-AC01CDD218C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72CDC612-B8E3-4D05-A8DF-AC01CDD218C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72CDC612-B8E3-4D05-A8DF-AC01CDD218C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72CDC612-B8E3-4D05-A8DF-AC01CDD218C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
